@@ -134,7 +134,7 @@
                 {% for section_form in child_sections.forms %}
                   <div class="col-span-6 sm:col-span-4 flex option">
                     {{section_form.name|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"|attr:"placeholder:Sub Section Name"}}
-                      <span class="inline-block align-middle text-[#337ab7] m-2">
+                      <span class="inline-block align-middle text-[#337ab7] m-2" @click="deleteOption($event)">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer text-red-500">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>                          
@@ -173,19 +173,9 @@
         return 
     };
 
-    function deleteOption(evt) {
-    var count = $(".option:visible").length;
-    var question_type = this.$el.find('#id_type').val();
-    if (question_type == 'F') return;
-
-    let requiredNumberOfOptions = this.getRequiredNumberOfOptions(question_type);
-    if (count <= requiredNumberOfOptions) {
-      alert(`This question must have at least ${requiredNumberOfOptions} option(s).`)
-      return;
-    }
-    var option = $(evt.target).closest('.option');
-    option.find('[type="checkbox"]').prop('checked', true);
-    option.hide();
+    function deleteOption(event) {
+        event.target.closest('.option').style.display = 'none'
+        event.target.value = null
   }
   </script>
 </body>
