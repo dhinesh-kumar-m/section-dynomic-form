@@ -1,7 +1,7 @@
 
 from django import forms
-from django.forms.models import inlineformset_factory
 from section.models import Section
+from extra_views import InlineFormSetFactory
 
 
 class SectionForm(forms.ModelForm):
@@ -25,3 +25,8 @@ class ChildSectionForm(forms.ModelForm):
         fields = (
             "name",
         )
+
+class SectionInline(InlineFormSetFactory):
+    model = Section
+    form_class = ChildSectionForm
+    factory_kwargs = {"extra": 0, "fk_name": "parent"}

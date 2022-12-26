@@ -1,183 +1,200 @@
 {% load widget_tweaks %}
 <!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-</head>
-  <body class="overflow-y-scroll min-h-screen bg-gray-100" data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="" x-data x-foo>    
-<header>
-    <nav class="bg-white border-b border-gray-200" x-data="{ open: false }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <div class="flex-shrink-0 flex items-center">
-                        <div class="text-2xl text-gray-900 tracking-wide">Navbar Goes Here</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="overflow-y-scroll min-h-screen bg-gray-100" data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="" x-data x-foo>
+        <header>
+            <nav class="bg-white border-b border-gray-200" x-data="{ open: false }">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between h-16">
+                        <div class="flex">
+                            <div class="flex-shrink-0 flex items-center">
+                                <div class="text-2xl text-gray-900 tracking-wide">Navbar Goes Here</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </header>
+        <div class="max-w-7xl mx-auto xl:px-8 py-8 lg:grid lg:grid-cols-12 lg:gap-x-5">
+            <div class="py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3">
+                <nav class="space-y-1">
+                    <a href="#" class="text-gray-500 hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium active:bg-emerald-100 " aria-current="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="truncate"> Settings </span>
+                    </a>
+                    <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        <span class="truncate"> View Sections </span>
+                    </a>
+                    <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="truncate"> Add Sections </span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                        </svg>
+                        <span class="truncate"> Statistics </span>
+                    </a>
+                    <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                        </svg>
+                        <span class="truncate"> List Usages </span>
+                    </a>
+                    <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                        </svg>
+                        <span class="truncate"> Offline Scores </span>
+                    </a>
+                    <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                        </svg>
+                        <span class="truncate"> View Comments </span>
+                    </a>
+                </nav>
             </div>
-        </div>
-    </nav>
-</header>
-  
-  <div class="max-w-7xl mx-auto xl:px-8 py-8 lg:grid lg:grid-cols-12 lg:gap-x-5">
-    
-  
-  <div class="py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3">
-    <nav class="space-y-1">
-      <a href="#" class="text-gray-500 hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium active:bg-emerald-100 " aria-current="page">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-        <span class="truncate"> Settings </span>
-      </a>
-      <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-        </svg>
-        <span class="truncate"> View Sections </span>
-      </a>
-  
-      <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <span class="truncate"> Add Sections </span>
-      </a>
-  
-      <a href="#" class="text-gray-500 hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-        </svg>
-        <span class="truncate"> Statistics </span>
-      </a>
-  
-      <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-        </svg>          
-        <span class="truncate"> List Usages </span>
-      </a>
-
-      <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-        </svg>          
-        <span class="truncate"> Offline Scores </span>
-      </a>
-
-      <a href="#" class="text-gray-500  hover:bg-gray-50 group rounded-md px-3 py-2 flex items-center text-sm font-medium ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 -ml-1 mr-3 h-6 w-6  text-gray-400 group-hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-        </svg>
-        <span class="truncate"> View Comments </span>
-      </a>
-    </nav>
-  </div>
-<form class="space-y-6 sm:px-6 lg:px-0 lg:col-span-9" enctype="multipart/form-data" method="POST" x-data="app()"  x-init="initialize()">
-    {% csrf_token %}
-    <div class="shadow sm:rounded-md sm:overflow-hidden">
-        <div class="bg-white py-6 px-4 sm:p-6">
-            <div>
-                <h2  class="text-lg leading-6 font-medium text-gray-900">Section details</h2>
-                <p class="mt-1 text-sm text-gray-500">You can edit this details later in update page</p>
-            </div>
-            <div class="mt-6 grid grid-cols-2 gap-y-6 gap-x-4 sm:grid-cols-6">
-                <div class="col-span-6 sm:col-span-4">
-                    <label class="block text-sm font-medium text-gray-700">{{ form.name.label }}</label>
-                    <div class="mt-1">
-                        {{form.name|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
-                        <div class="mt-1 text-sm text-red-500">{{form.name.errors}}</div>
+            <form class="space-y-6 sm:px-6 lg:px-0 lg:col-span-9" enctype="multipart/form-data" method="POST" x-data="utils" >
+                {% csrf_token %}
+                <div class="shadow sm:rounded-md sm:overflow-hidden">
+                    <div class="bg-white py-6 px-4 sm:p-6">
+                        <div>
+                            <h2  class="text-lg leading-6 font-medium text-gray-900">Section details</h2>
+                            <p class="mt-1 text-sm text-gray-500">You can edit this details later in update page</p>
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-y-6 gap-x-4 sm:grid-cols-6">
+                            <div class="col-span-6 sm:col-span-4">
+                                <label class="block text-sm font-medium text-gray-700">{{ form.name.label }}</label>
+                                <div class="mt-1">
+                                    {{form.name|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
+                                    <div class="mt-1 text-sm text-red-500">{{form.name.errors}}</div>
+                                </div>
+                            </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-700"> {{form.duration.label }} </label>
+                                <div class="mt-1">
+                                    {{form.duration|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
+                                    <div class="mt-1 text-sm text-red-500">{{form.duration.errors}}</div>
+                                </div>
+                            </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-700"> {{ form.cut_off.label }} </label>
+                                <div class="mt-1">
+                                    {{form.cut_off|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
+                                    <div class="mt-1 text-sm text-red-500">{{form.cut_off.errors}}</div>
+                                </div>
+                            </div>
+                            <div class="col-span-6 sm:col-span-6">
+                                <label class="block text-sm font-medium text-gray-700">{{ form.instructions.label }}</label>
+                                <div class="mt-1">
+                                    {{form.instructions|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"|attr:"rows:5"}}
+                                    <div class="mt-1 text-sm text-red-500">{{form.instructions.errors}}</div>
+                                </div>
+                            </div>
+                            <div id="sub-sections" class="contents">
+                                <div class="col-span-6 sm:col-span-6">
+                                    <a class="text-sm font-medium text-gray-700" @click="addSubSection($event)">
+                                        Add Sub Section
+                                        <span class="inline-block align-middle text-[#337ab7]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 cursor-pointer">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                            </svg>
+                                            </svg>                              
+                                            </svg>                              
+                                            </svg>                              
+                                            </svg>                              
+                                        </span>
+                                    </a>
+                                </div>
+                                {{ child_sections.management_form }}
+                                {% for section_form in child_sections.forms %}
+                                <div class="col-span-6 sm:col-span-4 flex option">
+                                    {{section_form.name|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"|attr:"placeholder:Sub Section Name"}}
+                                    <span class="inline-block align-middle text-[#337ab7] m-2" @click="deleteOption($event)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer text-red-500">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </span>
+                                    <div class="hidden">
+                                        {{ section_form.id }}
+                                        {{ section_form.parent.id }}
+                                        {{ section_form.DELETE }}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="hidden">
+                                    {{ child_sections.empty_form.as_p }}
+                                </div>
+                                <template x-for="form in forms">
+                                    <div class='contents'>
+                                        <div class='col-span-6 sm:col-span-4 flex option'>
+                                            <input type='text' :name="`children-${form.id}-name`" :id="`id_children-${form.id}-name`" placeholder='Sub Section Name' class='block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm' maxlength='255'>
+                                            <span class='inline-block align-middle text-[#337ab7] m-2' @click='deleteOption($event)'>
+                                                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-5 h-5 cursor-pointer text-red-500'>
+                                                    <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12'></path>
+                                                </svg>
+                                            </span>
+                                            <div class='hidden'>
+                                                <input type='hidden' :name="`children-${form.id}-id`" :id="`id_children-${form.id}-id`">
+                                                <input type='hidden' :name="`children-${form.id}-parent`" :id="`id_children-${form.id}-parent`">
+                                                <input type='checkbox' :name="`children-${form.id}-DELETE`" :id="`id_children-${form.id}-DELETE`">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 text-right" id="buttons-container">
+                        <button type="button" onclick="location.href=`{% url 'sections:index' %}`" class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-900 hover:bg-blue-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        Cancel
+                        </button>
+                        <button type="submit" class="bg-emerald-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-900">
+                        {% if form.instance and form.instance.pk %}Update{% else %}Add{% endif %} Section
+                        </button>
                     </div>
                 </div>
-                  <div class="col-span-6 sm:col-span-3">
-                    <label class="block text-sm font-medium text-gray-700"> {{form.duration.label }} </label>
-                    <div class="mt-1">
-                        {{form.duration|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
-                      <div class="mt-1 text-sm text-red-500">{{form.duration.errors}}</div>
-                    </div>
-                  </div>
-
-                  <div class="col-span-6 sm:col-span-3">
-                    <label class="block text-sm font-medium text-gray-700"> {{ form.cut_off.label }} </label>
-                    <div class="mt-1">
-                        {{form.cut_off|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"}}
-                        <div class="mt-1 text-sm text-red-500">{{form.cut_off.errors}}</div>
-                    </div>
-                  </div>
-
-                  <div class="col-span-6 sm:col-span-6">
-                    <label class="block text-sm font-medium text-gray-700">{{ form.instructions.label }}</label>
-                    <div class="mt-1">
-                        {{form.instructions|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"|attr:"rows:5"}}
-                        <div class="mt-1 text-sm text-red-500">{{form.instructions.errors}}</div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 sm:col-span-6">
-                    <p class="text-sm font-medium text-gray-700">Add Sub Section
-                        <span class="inline-block align-middle text-[#337ab7]">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 cursor-pointer">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>                              
-                        </span>
-                    </p>
-                  </div>
-                  {{ child_sections.management_form }}
-                  
-                {% for section_form in child_sections.forms %}
-                  <div class="col-span-6 sm:col-span-4 flex option">
-                    {{section_form.name|add_class:"block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"|attr:"placeholder:Sub Section Name"}}
-                      <span class="inline-block align-middle text-[#337ab7] m-2" @click="deleteOption($event)">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer text-red-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>                          
-                      </span>
-                  </div>
-                  <div class="hidden">
-                    {{ answer_form.id }}
-                    {{ answer_form.question }}
-                    {{ answer_form.DELETE }}
-                  </div>
-                {% endfor %}
-
-            </div>
+            </form>
         </div>
-        <div class="px-4 py-3 bg-gray-50 text-right" id="buttons-container">
-            <button type="button" onclick="location.href='#'"
-                class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-900 hover:bg-blue-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                Cancel
-            </button>
-            <button type="submit"
-                class="bg-emerald-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-900">
-                Add Section
-            </button>
         </div>
-    </div>
-</div>
-</form>
-</div>
-<script>
-    function app() {
-        console.log("hello")
-      return {
-      }
-    }
-    function initialize(){
-        return 
-    };
-
-    function deleteOption(event) {
-        event.target.closest('.option').style.display = 'none'
-        event.target.value = null
-  }
-  </script>
-</body>
-
+        <script>
+            document.addEventListener('alpine:init', () => {
+              Alpine.data('utils', () => ({
+                forms: [],
+                formCount:document.getElementById('id_children-TOTAL_FORMS').value,
+            
+                  addSubSection(evt){      
+                    this.forms.push({
+                      id: this.formCount
+                    })
+                    document.getElementById('id_children-TOTAL_FORMS').setAttribute("value",++this.formCount)
+                  },
+            
+                  deleteOption(event) {
+                    event.target.closest('.option').style.display = 'none'
+                    event.target.closest('.option').querySelectorAll('input[type=checkbox]')[0].setAttribute("checked",true)
+                  }
+              }))
+            })
+        </script>
+    </body>
 </html>
